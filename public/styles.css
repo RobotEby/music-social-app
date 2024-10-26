@@ -3,53 +3,162 @@
     margin: 0;
     padding: 0;
 }
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e2f;
-    display: flex;
-    justify-content: center;
+    font-family: Helvetica;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: linear-gradient(135deg, #1e1e2f 30%, #333347 90%);
+    background-image: url(images/Background-Image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-.login-container {
+.login-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    max-width: 400px;
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    padding: 40px 20px;
-    backdrop-filter: blur(10px);
+    width: 700px;
+    height: 880px;
+    background-color: #0e0e19;
+    border-radius: 20px;
+    padding: 50px 0;
+    margin: 30px auto;
 }
-
-.logo-container {
+.login-panel img {
+    width: 50px;
+}
+.panel-header {
+    color: #f25ea3;
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
-
-.logo {
-    width: 80px;
-    height: auto;
+.panel-header::after {
+    content: '';
+    display: block;
+    width: 130%;
+    height: 3px;
+    background-color: #3f3f73;
+    margin: 10px 0;
+    position: relative;
+    left: -15%;
 }
-
-h2 {
-    color: #F25EA3;
+.highlighted-text {
+    color: #3f3f73;
+}
+.separator {
+    text-align: center;
+    margin: 10px;
     margin-bottom: 30px;
-    text-align: center;
+    color: #f25ea3;
+    font-size: 40px;
+    font-weight: bold;
 }
-
+.form-label {
+    font-weight: bolder;
+    color: #f25ea3;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    left: -45%;
+}
+.input-group {
+    height: 50px;
+    display: flex;
+    background: #161628;
+    border-radius: 25px;
+    padding: 15px;
+    width: 200%;
+    margin: 10px auto;
+    position: relative;
+    left: -51%;
+}
+.input-field {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+}
+.input-field::placeholder {
+    color: #3f3f73;
+    font-weight: bold;
+}
+.submit-button {
+    background: #f25ea3;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 16px;
+    width: 200%;
+    position: relative;
+    left: -51%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #f25ea3;
+    cursor: pointer;
+    position: relative;
+    left: -60%;
+}
+.toggle-wrapper:hover {
+    color: #a04271;
+}
+.toggle-description {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #f25ea3;
+    font-weight: bold;
+}
+.toggle-description:hover {
+    color: #a04271;
+}
+.fa-toggle-off {
+    color: #3f3f73;
+}
+.signup-container {
+    color: #3f3f73;
+    text-align: center;
+    font-size: 17px;
+}
+.signup-container a {
+    color: #f25ea3;
+    font-size: 18px;
+}
+.signup-container a:hover {
+    font-weight: bold;
+}
+.forgot-password-container {
+    text-align: center;
+    margin: 10px 0;
+}
+#forgot-password-link {
+    color: #3f3f73;
+    font-size: 16px;
+}
+#forgot-password-link:hover {
+    color: #a04271;
+}
+.forgot-password-container::after {
+    content: '';
+    display: block;
+    width: 360%;
+    height: 3px;
+    background-color: #3f3f73;
+    margin: 20px 0;
+    position: relative;
+    left: -130%;
+}
 .social-login-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
 .social-login {
     width: 50px;
     height: 50px;
@@ -63,103 +172,24 @@ h2 {
     font-size: 24px;
     transition: background-color 0.3s ease;
 }
-
 .social-login.facebook {
     background-color: #3b5998;
     color: white;
 }
-
 .social-login.facebook:hover {
     background-color: #334d84;
 }
-
 .social-login.google {
     background-color: #db4437;
     color: white;
 }
-
 .social-login.google:hover {
     background-color: #c33c2f;
 }
-
 .social-login.apple {
     background-color: #000000;
     color: white;
 }
-
 .social-login.apple:hover {
     background-color: #1a1a1a;
-}
-
-.divider {
-    text-align: center;
-    margin: 20px 0;
-    color: #FFFFFF;
-}
-
-.divider span {
-    padding: 0 10px;
-}
-
-.input-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    background: #2a2a3d;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.input-group i {
-    color: #F25EA3;
-    margin-right: 10px;
-}
-
-input {
-    flex: 1;
-    border: none;
-    background: transparent;
-    padding: 10px;
-    color: white;
-    font-size: 14px;
-}
-
-input::placeholder {
-    color: #b3b3b3;
-}
-
-input:focus {
-    outline: none;
-}
-
-.login-btn {
-    background: #8c305b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.login-btn:hover {
-    background: #a04271;
-}
-
-.register-link {
-    color: white;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.register-link a {
-    color: #F25EA3;
-    text-decoration: none;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
 }
