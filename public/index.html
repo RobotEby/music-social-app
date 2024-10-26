@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login - Music Social App</title>
+        <title>Login - ÁriaMusic</title>
         <link rel="stylesheet" href="styles.css" />
         <link
             rel="stylesheet"
@@ -11,9 +11,50 @@
         />
     </head>
     <body>
-        <div class="login-container">
-            <div class="logo-container"></div>
-            <h2>Music Social App</h2>
+        <div class="login-panel">
+            <img
+                src="images/Icon-Ariamusic not-Background.png"
+                alt="App Logo"
+            />
+            <h2 class="panel-header">
+                <span class="highlighted-text">Log in with an</span>
+                <br />ÁriaMusic Account
+            </h2>
+            <form id="user-login-form">
+                <label for="email-input" class="form-label"
+                    >Email or Username</label
+                >
+                <div class="input-group">
+                    <input
+                        type="email"
+                        class="input-field"
+                        id="email-input"
+                        placeholder="Email or Username"
+                        required
+                    />
+                </div>
+                <label for="password-input" class="form-label">Password</label>
+                <div class="input-group">
+                    <input
+                        type="password"
+                        class="input-field"
+                        id="password-input"
+                        placeholder="Password"
+                        required
+                    />
+                </div>
+                <div class="toggle-wrapper">
+                    <i class="fas fa-toggle-on" id="remember-toggle"></i>
+                    <span class="toggle-description">Remember me</span>
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+            </form>
+            <div class="forgot-password-container">
+                <a href="#" id="forgot-password-link">Forgot your password?</a>
+            </div>
+            <div class="separator">
+                <span>or</span>
+            </div>
             <div class="social-login-container">
                 <button class="social-login facebook">
                     <i class="fab fa-facebook-f"></i>
@@ -25,39 +66,14 @@
                     <i class="fab fa-apple"></i>
                 </button>
             </div>
-            <div class="divider">
-                <span>ou</span>
-            </div>
-            <form id="loginForm">
-                <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input
-                        type="email"
-                        id="loginEmail"
-                        placeholder="Email"
-                        required
-                    />
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-lock"></i>
-                    <input
-                        type="password"
-                        id="loginPassword"
-                        placeholder="Senha"
-                        required
-                    />
-                </div>
-                <button type="submit" class="login-btn">
-                    <i class="fas fa-sign-in-alt"></i> Login
-                </button>
-            </form>
-            <div class="register-link">
+            <div class="signup-container">
                 <p>
-                    Não tem uma conta?
-                    <a href="#" id="registerLink">Registrar-se</a>
+                    Don't have an account?
+                    <a href="#" id="sign-up-link">Sign up</a>
                 </p>
             </div>
         </div>
+        <p></p>
         <script src="scripts.js"></script>
     </body>
 </html>
