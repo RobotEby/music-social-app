@@ -1,4 +1,3 @@
-// Select the social login elements and check if they exist before adding event listeners
 const facebookLogin = document.querySelector('.social-login.facebook');
 if (facebookLogin) {
     facebookLogin.addEventListener('click', function () {
@@ -86,7 +85,6 @@ if (loginForm) {
     });
 }
 
-// Script for toggle icon
 const rememberToggle = document.getElementById('remember-toggle');
 if (rememberToggle) {
     rememberToggle.addEventListener('click', () => {
@@ -102,4 +100,25 @@ if (rememberToggle) {
     });
 } else {
     console.error('The remember-toggle element was not found');
+}
+
+const togglePassword = document.querySelector('#togglePassword');
+const passwordInput = document.querySelector('#password-input');
+
+if (togglePassword && passwordInput) {
+    togglePassword.addEventListener('click', function () {
+        const type =
+            passwordInput.getAttribute('type') === 'password'
+                ? 'text'
+                : 'password';
+        passwordInput.setAttribute('type', type);
+
+        if (type === 'password') {
+            this.classList.remove('fa-eye');
+            this.classList.add('fa-eye-slash');
+        } else {
+            this.classList.remove('fa-eye-slash');
+            this.classList.add('fa-eye');
+        }
+    });
 }
