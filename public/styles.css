@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(images/Background-Image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+.login-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 880px;
+    background-color: #0e0e19;
+    border-radius: 20px;
+    padding: 50px 0;
+    margin: 30px auto;
+}
+.login-panel img {
+    height: 50px;
+    justify-content: center;
+}
+.panel-header {
+    color: #f25ea3;
+    text-align: center;
+    font-size: 50px;
+}
+.panel-header::after {
+    content: '';
+    display: block;
+    width: 130%;
+    height: 3px;
+    background-color: #3f3f73;
+    margin: 10px 0;
+    position: relative;
+    left: -15%;
+}
+.highlighted-text {
+    color: #3f3f73;
+}
+.separator {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    color: #f25ea3;
+    font-size: 30px;
+    font-weight: bold;
+}
+.form-label {
+    font-weight: bolder;
+    color: #f25ea3;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    left: -45%;
+}
+.input-group {
+    height: 50px;
+    display: flex;
+    background: #161628;
+    border-radius: 25px;
+    padding: 15px;
+    width: 200%;
+    margin: 10px auto;
+    position: relative;
+    left: -51%;
+}
+.input-group {
+    position: relative;
+}
+#password-input {
+    padding-right: 40px;
+}
+#togglePassword {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #f25ea3;
+}
+.input-group:hover {
+    box-shadow: inset 0 0 0 1px var(--essential-negative, #f25ea3);
+}
+.input-field {
+    color: rgb(255, 234, 234);
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+    font-weight: 600;
+}
+.input-field::placeholder {
+    color: #3f3f73;
+    font-weight: bold;
+}
+.submit-button {
+    background: #f25ea3;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 20px;
+    width: 200%;
+    position: relative;
+    left: -51%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    transform: scale(1.04);
+    background-color: #fa65ab;
+    font-weight: 580;
+}
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #f25ea3;
+    cursor: pointer;
+    position: relative;
+    left: -60%;
+}
+.toggle-description {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #f25ea3;
+    font-weight: bold;
+}
+.fa-toggle-on:hover {
+    color: #a04271;
+}
+.fa-toggle-off {
+    color: #3f3f73;
+}
+.signup-container {
+    color: #3f3f73;
+    text-align: center;
+    font-size: 17px;
+}
+.signup-container a {
+    color: #a04271;
+    font-size: 18px;
+}
+.signup-container a:hover {
+    color: #f25ea3;
+}
+.forgot-password-container {
+    text-align: center;
+    margin: 10px 0;
+}
+#forgot-password-link {
+    color: #a04271;
+    font-size: 16px;
+}
+#forgot-password-link:hover {
+    color: #f25ea3;
+}
+.forgot-password-container::after {
+    content: '';
+    display: block;
+    width: 360%;
+    height: 3px;
+    background-color: #3f3f73;
+    margin: 20px 0;
+    position: relative;
+    left: -130%;
+}
+.social-login-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-login {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+.social-login.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+.social-login.facebook:hover {
+    background-color: #334d84;
+}
+.social-login.google {
+    background-color: #db4437;
+    color: white;
+}
+.social-login.google:hover {
+    background-color: #c33c2f;
+}
+.social-login.apple {
+    background-color: #000000;
+    color: white;
+}
+.social-login.apple:hover {
+    background-color: #1a1a1a;
+}
