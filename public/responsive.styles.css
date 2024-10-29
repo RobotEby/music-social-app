@@ -1,7 +1,6 @@
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     body {
         margin-top: 3%;
-        background-image: url(images/Background-Image.png);
         background-size: auto;
         background-position: center;
         background-repeat: no-repeat;
@@ -41,7 +40,7 @@
         left: 5%;
         margin-top: 0%;
     }
-    
+
     .toggle-wrapper {
         font-size: 16px;
         left: -10%;
@@ -92,5 +91,218 @@
         margin: 10px 0;
         position: relative;
         left: 0%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    .login-panel {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+
+    .panel-header {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .input-group {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto;
+        left: 0;
+    }
+
+    .submit-button {
+        width: 90%;
+        padding: 10px;
+        left: 0;
+        font-size: 18px;
+    }
+
+    .toggle-wrapper {
+        font-size: 18px;
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-label {
+        left: 0;
+    }
+
+    .forgot-password-container::after {
+        width: 90%;
+        left: 0;
+    }
+
+    .forgot-password-container {
+        margin-top: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .separator {
+        font-size: 20px;
+    }
+
+    .highlighted-text {
+        font-size: 20px;
+    }
+
+    .social-login-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .social-login {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+    .login-panel {
+        width: 100%;
+        height: auto;
+        padding: 25px 15px;
+        margin: 20px auto;
+    }
+
+    .panel-header {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .input-group {
+        width: 90%;
+        padding: 12px;
+        margin: 12px auto;
+        left: 0;
+    }
+
+    .submit-button {
+        width: 90%;
+        padding: 12px;
+        left: 0;
+        font-size: 20px;
+    }
+
+    .toggle-wrapper {
+        font-size: 18px;
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-label {
+        left: 0;
+    }
+
+    .forgot-password-container::after {
+        width: 90%;
+        left: 0;
+    }
+
+    .forgot-password-container {
+        margin-top: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .separator {
+        font-size: 22px;
+    }
+
+    .highlighted-text {
+        font-size: 22px;
+    }
+
+    .social-login-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .social-login {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+    .login-panel {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+
+    .panel-header {
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    .input-group {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto;
+        left: 0;
+    }
+
+    .submit-button {
+        width: 90%;
+        padding: 10px;
+        left: 0;
+        font-size: 18px;
+    }
+
+    .toggle-wrapper {
+        font-size: 16px;
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-label {
+        left: 0;
+    }
+
+    .forgot-password-container::after {
+        width: 90%;
+        left: 0;
+    }
+
+    .forgot-password-container {
+        margin-top: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .separator {
+        font-size: 20px;
+    }
+
+    .highlighted-text {
+        font-size: 20px;
+    }
+
+    .social-login-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .social-login {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 0 5px;
     }
 }
