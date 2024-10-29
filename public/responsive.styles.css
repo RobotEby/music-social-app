@@ -1,96 +1,176 @@
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    body {
-        margin-top: 3%;
-        background-image: url(images/Background-Image.png);
-        background-size: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-bottom: 55%;
-    }
-
+@media (max-width: 736px) {
     .login-panel {
-        justify-content: center;
-        width: 300px;
+        width: 90%;
         height: auto;
-        padding: 25px;
-        margin: 0 auto;
-        border-radius: 10px; 
-    }
-
-    .login-panel img {
-        height: 40px;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 15px;
     }
 
     .panel-header {
-        font-size: 24px;
-        padding: 10px;
+        font-size: 36px;
+    }
+
+    .panel-header::after {
+        width: 100%;
+        left: 0;
     }
 
     .input-group {
-        width: 90%;
+        width: 100%;
         padding: 10px;
-        margin: 10px auto;
-        left: 0;
+        border-radius: 20px;
     }
 
     .submit-button {
-        width: 90%;
-        padding: 10px;
-        left: 0;
+        width: 100%;
+        padding: 12px;
         font-size: 18px;
-        left: 5%;
-        margin-top: 0%;
+        border-radius: 20px;
     }
-    
-    .toggle-wrapper {
+
+    .form-label {
+        font-size: 14px;
+        left: 0;
+    }
+
+    .separator,
+    .toggle-wrapper,
+    .signup-container {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+
+    .toggle-description {
         font-size: 16px;
-        left: -10%;
-        margin-top: 0%;
-        margin-bottom: 5%;
+    }
+
+    .forgot-password-container::after {
+        width: 100%;
+        left: 0;
     }
 
     .social-login {
         width: 40px;
         height: 40px;
-        font-size: 16px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .login-panel {
+        width: 70%;  
+        height: auto;
+        padding: 30px;
+        margin: 30px auto;
+        border-radius: 20px;
+    }
+
+    .panel-header {
+        font-size: 42px;
+    }
+
+    .panel-header::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .input-group {
+        width: 80%;  
+        padding: 12px;
+        border-radius: 25px;
+    }
+
+    .submit-button {
+        width: 80%;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 25px;
     }
 
     .form-label {
-        left: 10%;
-        margin-top: 0%;
+        font-size: 16px;
+        left: 0;
     }
 
-    .separator {
-        margin-top: 5%;
-        font-size: 25px;
-        font-weight: bold;
+    .separator,
+    .toggle-wrapper,
+    .signup-container {
+        font-size: 22px;
+        margin: 10px 0;
     }
 
-    .forgot-password-container {
-        margin-bottom: 0%;
-        display: contents;
-    }
-    
-    #forgot-password-link {
-        margin-top: 10px;
-    }
-    
-    .highlighted-text {
-        font-size: 20px;
-    }
-    
-    .social-login-container {
-        margin-top: 0%;
+    .toggle-description {
+        font-size: 18px;
     }
 
     .forgot-password-container::after {
-        content: '';
-        display: block;
-        width: 113%;
-        height: 3px;
-        background-color: #3f3f73;
-        margin: 10px 0;
-        position: relative;
-        left: 0%;
+        width: 80%;
+        left: 10%;
+    }
+
+    .social-login {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 3840px) {
+    .login-panel {
+        width: 50%;  
+        height: auto;
+        padding: 40px;
+        margin: 50px auto;
+        border-radius: 25px;
+    }
+
+    .panel-header {
+        font-size: 56px;
+    }
+
+    .panel-header::after {
+        width: 80%;
+        left: 10%;
+    }
+
+    .input-group {
+        width: 70%;  
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    .submit-button {
+        width: 70%;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 30px;
+    }
+
+    .form-label {
+        font-size: 18px;
+        left: 0;
+    }
+
+    .separator,
+    .toggle-wrapper,
+    .signup-container {
+        font-size: 26px;
+        margin: 15px 0;
+    }
+
+    .toggle-description {
+        font-size: 22px;
+    }
+
+    .forgot-password-container::after {
+        width: 60%;
+        left: 20%;
+    }
+
+    .social-login {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
     }
 }
