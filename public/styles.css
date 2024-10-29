@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: sans-serif;
     align-items: center;
@@ -14,26 +15,30 @@ body {
     background-repeat: no-repeat;
     overflow-y: hidden;
 }
+
 .login-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 700px;
+    width: 650px;
     height: 880px;
     background-color: #0e0e19;
     border-radius: 20px;
-    padding: 50px 0;
+    padding: 25px 0;
     margin: 30px auto;
 }
+
 .login-panel img {
     height: 50px;
     justify-content: center;
 }
+
 .panel-header {
     color: #f25ea3;
     text-align: center;
     font-size: 50px;
 }
+
 .panel-header::after {
     content: '';
     display: block;
@@ -44,9 +49,11 @@ body {
     position: relative;
     left: -15%;
 }
+
 .highlighted-text {
     color: #3f3f73;
 }
+
 .separator {
     text-align: center;
     margin: 10px;
@@ -55,6 +62,7 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
+
 .form-label {
     font-weight: bolder;
     color: #f25ea3;
@@ -62,7 +70,9 @@ body {
     display: block;
     position: relative;
     left: -45%;
+    cursor: auto;
 }
+
 .input-group {
     height: 50px;
     display: flex;
@@ -74,12 +84,15 @@ body {
     position: relative;
     left: -51%;
 }
+
 .input-group {
     position: relative;
 }
+
 #password-input {
     padding-right: 40px;
 }
+
 #togglePassword {
     position: absolute;
     right: 15px;
@@ -88,9 +101,11 @@ body {
     cursor: pointer;
     color: #f25ea3;
 }
+
 .input-group:hover {
     box-shadow: inset 0 0 0 1px var(--essential-negative, #f25ea3);
 }
+
 .input-field {
     color: rgb(255, 234, 234);
     border: none;
@@ -99,10 +114,12 @@ body {
     outline: none;
     font-weight: 600;
 }
+
 .input-field::placeholder {
     color: #3f3f73;
     font-weight: bold;
 }
+
 .submit-button {
     background: #f25ea3;
     color: black;
@@ -116,11 +133,13 @@ body {
     margin-top: 10px;
     cursor: pointer;
 }
+
 .submit-button:hover {
     transform: scale(1.04);
     background-color: #fa65ab;
     font-weight: 580;
 }
+
 .toggle-wrapper {
     display: flex;
     align-items: center;
@@ -130,43 +149,54 @@ body {
     color: #f25ea3;
     cursor: pointer;
     position: relative;
-    left: -60%;
+    left: -65%;
 }
+
 .toggle-description {
     margin-left: 10px;
     font-size: 18px;
     color: #f25ea3;
     font-weight: bold;
+    cursor: auto;
 }
+
 .fa-toggle-on:hover {
     color: #a04271;
 }
+
 .fa-toggle-off {
     color: #3f3f73;
 }
+
 .signup-container {
     color: #3f3f73;
     text-align: center;
     font-size: 17px;
 }
+
 .signup-container a {
     color: #a04271;
     font-size: 18px;
 }
+
 .signup-container a:hover {
     color: #f25ea3;
 }
+
 .forgot-password-container {
     text-align: center;
     margin: 10px 0;
 }
+
 #forgot-password-link {
     color: #a04271;
     font-size: 16px;
 }
+
 #forgot-password-link:hover {
     color: #f25ea3;
 }
+
 .forgot-password-container::after {
     content: '';
     display: block;
@@ -177,11 +207,13 @@ body {
     position: relative;
     left: -130%;
 }
+
 .social-login-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .social-login {
     width: 50px;
     height: 50px;
@@ -195,24 +227,30 @@ body {
     font-size: 24px;
     transition: background-color 0.3s ease;
 }
+
 .social-login.facebook {
     background-color: #3b5998;
     color: white;
 }
+
 .social-login.facebook:hover {
     background-color: #334d84;
 }
+
 .social-login.google {
     background-color: #db4437;
     color: white;
 }
+
 .social-login.google:hover {
     background-color: #c33c2f;
 }
+
 .social-login.apple {
     background-color: #000000;
     color: white;
 }
+
 .social-login.apple:hover {
     background-color: #1a1a1a;
 }
