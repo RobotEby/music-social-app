@@ -105,6 +105,11 @@ if (rememberToggle) {
 const togglePassword = document.querySelector('#togglePassword');
 const passwordInput = document.querySelector('#password-input');
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const isPasswordVisible = togglePassword.classList.contains('fa-eye');
+    passwordInput.setAttribute('type', isPasswordVisible ? 'text' : 'password');
+});
+
 if (togglePassword && passwordInput) {
     togglePassword.addEventListener('click', function () {
         const type =
@@ -112,7 +117,6 @@ if (togglePassword && passwordInput) {
                 ? 'text'
                 : 'password';
         passwordInput.setAttribute('type', type);
-
         if (type === 'password') {
             this.classList.remove('fa-eye');
             this.classList.add('fa-eye-slash');
