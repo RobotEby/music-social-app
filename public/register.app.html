@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up - AriaMusic</title>
+        <link rel="stylesheet" href="register.app.css" />
+    </head>
+    <body>
+        <section class="registration-section">
+            <div class="header">
+                <img
+                    src="images/Icon-Ariamusic not-Background.png"
+                    alt="Logo"
+                />
+                <h1 class="header-title">
+                    <span class="signup-text">Sign up your</span> <br />account
+                </h1>
+            </div>
+            <div class="form-container">
+                <form class="email-phone-form">
+                    <label for="email-phone-input">Email or Phone</label>
+                    <input
+                        id="email-phone-input"
+                        type="text"
+                        required="required"
+                        placeholder="Email or Phone"
+                    />
+                </form>
+                <form class="password-form">
+                    <label for="password-input">Password</label>
+                    <input
+                        id="password-input"
+                        type="password"
+                        required="required"
+                        maxlength="20"
+                        placeholder="Password"
+                    />
+                </form>
+                <form class="confirm-password-form">
+                    <label for="confirm-password-input"
+                        >Confirm your Password</label
+                    >
+                    <input
+                        id="confirm-password-input"
+                        type="password"
+                        required="required"
+                        maxlength="20"
+                        placeholder="Confirm your Password"
+                    />
+                </form>
+            </div>
+            <div class="divider"></div>
+            <div class="dob-container">
+                <h2>Date of Birth</h2>
+                <div class="dob-inputs">
+                    <div class="dob-month">
+                        <p>Month</p>
+                        <select name="month" id="dob-month">
+                            <option value=""></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="dob-day">
+                        <p>Day</p>
+                        <select name="day" id="dob-day">
+                            <option value=""></option>
+                            <script>
+                                for (let dd = 1; dd <= 31; dd++)
+                                    document.write(
+                                        `<option value="${dd}">${dd}</option>`
+                                    );
+                            </script>
+                        </select>
+                    </div>
+                    <div class="dob-year">
+                        <p>Year</p>
+                        <select id="dob-year" name="year">
+                            <option value=""></option>
+                            <script>
+                                for (let yy = 2024; yy >= 1924; yy--)
+                                    document.write(
+                                        `<option value="${yy}">${yy}</option>`
+                                    );
+                            </script>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button
+                    id="next-button"
+                    onclick="location.href='register.appsx.html'"
+                >
+                    Next
+                </button>
+                <div class="terms-container">
+                    <a href="#">Terms and Services</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
