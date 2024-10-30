@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up - AriaMusic</title>
+        <link rel="stylesheet" href="register.appsx.css" />
+    </head>
+    <body>
+        <section class="registration-section">
+            <div class="header">
+                <img
+                    src="images/Icon-Ariamusic not-Background.png"
+                    alt="Logo"
+                />
+                <h1 class="header-title">
+                    <span class="signup-text">Add a Name and</span>
+                    <br />Nickname
+                </h1>
+            </div>
+            <div class="form-container">
+                <form class="name-form">
+                    <label for="name-input">Name</label>
+                    <input
+                        class="input-field"
+                        id="name-input"
+                        type="text"
+                        required="required"
+                        placeholder="Name"
+                        autofocus
+                    />
+                </form>
+                <form class="nickname-form">
+                    <label for="nickname-input">Nickname</label>
+                    <input
+                        class="input-field"
+                        id="nickname-input"
+                        type="text"
+                        required="required"
+                        maxlength="20"
+                        placeholder="Nickname"
+                        autofocus
+                    />
+                </form>
+            </div>
+            <div class="divider"></div>
+            <div class="gender-container">
+                <h2>Gender</h2>
+                <div class="gender-options">
+                    <div class="gender-option">
+                        <input type="radio" name="gender" value="M" /><label
+                            >Masculine</label
+                        >
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" name="gender" value="F" /><label
+                            >Feminine</label
+                        >
+                    </div>
+                    <div class="gender-option">
+                        <input
+                            type="radio"
+                            id="other"
+                            name="gender"
+                            value="O"
+                        /><label>Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button
+                    id="next-button"
+                    onclick="location.href='Sign-up_02.html'"
+                >
+                    Next
+                </button>
+                <div class="terms-container">
+                    <a href="#">Terms and Services</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
