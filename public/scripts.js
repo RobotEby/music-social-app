@@ -1,50 +1,30 @@
-const facebookLogin = document.querySelector('.social-login.facebook');
-if (facebookLogin) {
-    facebookLogin.addEventListener('click', function () {
-        window.location.href = '/auth/facebook';
-    });
-}
-
-const googleLogin = document.querySelector('.social-login.google');
-if (googleLogin) {
-    googleLogin.addEventListener('click', function () {
-        window.location.href = '/auth/google';
-    });
-}
-
-const appleLogin = document.querySelector('.social-login.apple');
-if (appleLogin) {
-    appleLogin.addEventListener('click', function () {
-        window.location.href = '/auth/apple';
-    });
-}
-
 const signUpLink = document.getElementById('sign-up-link');
 if (signUpLink) {
     signUpLink.addEventListener('click', function (e) {
         e.preventDefault();
-        document
-            .getElementById('register-form-container')
-            .classList.add('active');
-        document
-            .getElementById('login-form-container')
-            .classList.remove('active');
+        window.location.href = 'register.app.html';
     });
 }
 
-const registerForm = document.getElementById('register-form');
-if (registerForm) {
-    registerForm.addEventListener('submit', async function (e) {
+const nextButton = document.getElementById('next-button');
+if (nextButton) {
+    nextButton.addEventListener('click', function (e) {
         e.preventDefault();
-        const username = document.getElementById('register-username').value;
-        const email = document.getElementById('register-email').value;
-        const phone = document.getElementById('register-phone').value;
-        const password = document.getElementById('register-password').value;
+        window.location.href = 'register.appsx.html';
+    });
+}
+
+const nameForm = document.getElementById('name-form');
+if (nameForm) {
+    nameForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const username = document.getElementById('name-input').value;
+        const nickname = document.getElementById('nickname-input').value;
         try {
             const response = await fetch('/api/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, email, phone, password }),
+                body: JSON.stringify({ username, nickname }),
             });
             const data = await response.json();
             if (response.ok) {
@@ -104,7 +84,6 @@ if (rememberToggle) {
 
 const togglePassword = document.querySelector('#togglePassword');
 const passwordInput = document.querySelector('#password-input');
-
 document.addEventListener('DOMContentLoaded', (event) => {
     const isPasswordVisible = togglePassword.classList.contains('fa-eye');
     passwordInput.setAttribute('type', isPasswordVisible ? 'text' : 'password');
