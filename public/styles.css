@@ -145,6 +145,7 @@ body {
 
 .signup-container a:hover {
     color: #f25ea3;
+    cursor: pointer;
 }
 
 .forgot-password-container {
@@ -159,6 +160,7 @@ body {
 
 #forgot-password-link:hover {
     color: #f25ea3;
+    cursor: pointer;
 }
 
 .forgot-password-container::after {
